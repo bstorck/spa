@@ -8,21 +8,7 @@
 					{{ session('status') }}
 				</div>
 			@endif
-			<div class="flex flex-col break-words bg-white border border-2 rounded shadow-md">
-				<div class="font-semibold bg-gray-200 text-gray-700 py-3 px-6 mb-0">
-					Spa Demo Dashboard
-				</div>
-				<div class="w-full p-6">
-					<p class="text-gray-700">
-						@auth
-							Bro!!! You are logged in now!
-						@endauth
-						@guest
-							You need to login bro....
-						@endguest
-					</p>
-				</div>
-			</div>
+			<router-view></router-view>
 		</div>
 	</div>
 @endsection
